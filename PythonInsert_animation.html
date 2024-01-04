@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Rounded Frame for Object Element</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .frame {
+            background-color: whitesmoke;
+            border-radius: 15px;
+            /* Adjust the border-radius for the rounded corners */
+            overflow: hidden;
+            /* Hide content that overflows the frame */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            /* Optional: Add shadow for depth */
+        }
+
+        .object-container {
+            width: 500px;
+            /* Adjust as needed */
+            height: 200px;
+            /* Adjust as needed */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="frame">
+        <div class="object-container">
+            <object data="PythonInsert_animation.svg" type="image/svg+xml">
+                <!-- Your fallback content if the object cannot be displayed -->
+                Fallback or alternative content here.
+            </object>
+        </div>
+    </div>
+</body>
+
+</html>
